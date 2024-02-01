@@ -173,8 +173,8 @@ insert into tbCliente(codCid,codCli,nome,tipoPessoa,cpf_cnpj,telefone,email,logr
 insert into tbCerveja(codCer, codEstilo, sku, nome, descricao, valor, teorAlcoolico, comissao, sabor, origem, quantidadeEstoque, contentType) values (01, 01, '123456jhgf', 'heineken Silver', 'Heineken Silver é fabricada usando um processo de guarda a uma temperatura de -1ºC, que resulta numa cerveja lager extra refrescante, com um sabor menos amargo e um final mais fresco e subtil que a torna mais fácil de beber.', 4.40, 4.0, 'PSD', 'Amargo no começo e no final fresco', '2023', 117, 'Garrafa de vidro');
 insert into tbCerveja(codCer, codEstilo, sku, nome, descricao, valor, teorAlcoolico, comissao, sabor, origem, quantidadeEstoque, contentType) values (02, 02, '678901jhgf', 'Skol Beats', 'Skol Beats é a cerveja de quem curte uma batida perfeita.', 6.99, 8.0, 'PSD', 'sabor era mais amargo e residual', '2003', 379, 'Latinha');
 
-insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(30,10,01,'23/10/22','10,00','25,00','290,00','A caminho','Frágil','24/10/22');
-insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(21,11,02,'30/11/23','30,00','10,00','590,00','A caminho','Frágil','01/12/23');
+insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(30,10,01,'23/10/22',10.00,25.00,290.00,'A caminho','Frágil','24/10/22');
+insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(21,11,02,'30/11/23',30.00,10.00,590.00,'A caminho','Frágil','01/12/23');
 
 insert into tbItemVenda(codItemVenda,codCer,codVenda,quantidade,valorUnitario)values (02, 01, 30, 6, 6.99);
 insert into tbItemVenda(codItemVenda,codCer,codVenda,quantidade,valorUnitario)values(03,02,21,10,7.99);
