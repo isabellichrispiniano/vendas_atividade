@@ -115,6 +115,7 @@ foreign key (codCer) references tbCerveja (codCer),
 foreign key (codVenda) references tbVenda (codVenda)
 );
 
+
 create table tbUsuarioGrupo(
 codUsu int,
 codGrupo int,
@@ -175,8 +176,8 @@ insert into tbCerveja(codCer, codEstilo, sku, nome, descricao, valor, teorAlcool
 insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(30,10,01,'23/10/22','10,00','25,00','290,00','A caminho','Frágil','24/10/22');
 insert into tbVenda(codVenda,codCli,codUsu,dataCriacao,valorFrete,valorDesconto,valorTotal,Estatus,observavao,dataHoraEntrega)values(21,11,02,'30/11/23','30,00','10,00','590,00','A caminho','Frágil','01/12/23');
 
-insert into tbItemVenda (codItemVenda, codCer, codVenda, quantidade, valorUnitario)values (01, 01, 15, 9, '4.00');
-insert into tbItemVenda (codItemVenda, codCer, codVenda, quantidade, valorUnitario)values (02, 02, 21, 6, '6.99');
+insert into tbItemVenda(codItemVenda,codCer,codVenda,quantidade,valorUnitario)values (02, 01, 30, 6, 6.99);
+insert into tbItemVenda(codItemVenda,codCer,codVenda,quantidade,valorUnitario)values(03,02,21,10,7.99);
 
 insert into tbUsuarioGrupo (codUsu, codGrupo) values (01, 01);
 insert into tbUsuarioGrupo (codUsu, codGrupo) values (02, 02);
