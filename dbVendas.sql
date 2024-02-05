@@ -186,6 +186,18 @@ insert into tbUsuarioGrupo (codUsu, codGrupo) values (02, 02);
 insert into tbGrupoPermissao (codGrupo, codPerm) values (01, 10);
 insert into tbGrupoPermissao (codGrupo, codPerm) values (02, 11);
 
+select codEstado, sigla from tbEstado where codEstado > 20 and sigla < 13; 
+select codEstilo, nome from tbEstilo where codEstilo in (2,3); 
+select codUsu,nome,email,senha from tbUsuario where codUsu not in (03);
+select codGrupo, nome from tbGrupo where codGrupo not in (02);
+select codPerm, nome from tbPermissao where codPerm in (10);
+select * from tbCidade where codCid < 22 or codCid > 20;
+select * from tbCliente where codCli in (20,21);
+select * from tbCerveja where codCer not in (02);
+select * from tbVenda where codVenda in (30,21) ;
+select * from tbItemVenda where codCer in (01);
+select * from tbUsuarioGrupo where codUsu not in (02);
+select * from tbGrupoPermissao where codPerm not in (10);
 
 -- alterando registros nas tabelas criadas.
 update tbEstado set sigla = 'RJ' where codEstado = 10 ;
